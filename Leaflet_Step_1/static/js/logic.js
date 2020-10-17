@@ -72,7 +72,7 @@ var earthquakes = L.geoJSON(quakedata, {
 // Add a legend
    var legend = L.control({position: "topleft" });
    legend.onAdd = function() {
-     var div = L.DomUtil.create("div", "legend");
+     var div = L.DomUtil.create("div", "info legend");
      var dpth = [0, 30, 45, 60, 75, 90]
      labels = [];
      var colors = ["lightgreen", "yellow", "lightgray", "orange", "blue", "red"];
@@ -86,6 +86,3 @@ var earthquakes = L.geoJSON(quakedata, {
     };
     legend.addTo(myMap);
     });
-
-
-
